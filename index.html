@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Studio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/Playericon.png">
+    <script src="https://kit.fontawesome.com/2eafec57ec.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./musicStyle.css" rel="stylesheet">
+</head>
+<body> 
+    <main>
+        <!-- Navigation Tab -->
+        <nav class="tab">
+            <div class="playername"><img src="./Images/Playericon.png" style="height: 60px; margin-left:20px; margin-top: -15px;"><span>Ninja Studio</span></div>
+            <div id="tab-fav">Favourites</div>
+            <div class="tab-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="tab-search"><input id="search" type="text" placeholder="  search"> </input></div>
+            <div class="notification"><i class="fa-solid fa-bell"></i></div>
+            <div class="mypic"><img src="./Images/Mypic.jpg"></div>  
+        </nav>
+        
+       
+        <div class="player-body">
+            <div class="outer-carousel">
+                <div class="carousel">
+                    <!-- these are the 3 images in the carousel -->
+                    <img src="./images/corousal1.jpeg">
+                    <img src= "./images/carousal2.jpeg">
+                    <img src="./images/carousal3.jpeg">
+                </div>
+            </div>
+
+           <!-- Latest release section -->
+            <div class="latest-release">
+                <h4>Latest Songs</h4>
+                <div class="latest-release-image">
+                    <a  class="play-song-button" href="#music-player-tab"><i  class="fa-solid fa-play">
+                    </i> </a>
+                    <img src="./Images/Aradhyasong.jpeg">
+                    
+                    <span class="latest-song-name">Aradhya  </span>
+                    <span class="latest-song-date">Sep 12 2023  </span>
+                    <div class="latest-release-ellipsis">
+                        <span class="ellispsis"><i class="fa-solid fa-ellipsis">
+                                <div class="dropdown-content">
+                                    <a href="#music-player-tab" ><i class="fa-solid fa-play"><span>Play now</span> </i> </a>
+                                    <a href="#"><i class="fa-solid fa-plus"> <span>Add to Queue</span>  </i></a>
+                                    <a href="#"><i class="fa-solid fa-list"> <span>Add to favourite </span></i> </a>
+                                    <a href="#"><i class="fa-solid fa-circle-info"><span>Get info!</span></i></a>
+                                </div>
+                            </i>  
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-release-image">
+                    <a class="play-song-button" href="#music-player-tab"><i class="fa-solid fa-play"></i></a>
+                    <img src="./Images/ChalayaSong.jpeg">
+                    <span class="latest-song-name">Chalaya  </span>
+                    <span class="latest-song-date">Sep 09 2023  </span>
+                    <div class="latest-release-ellipsis">
+                        <span class="ellispsis"><i class="fa-solid fa-ellipsis">
+                                <div class="dropdown-content">
+                                    <a href="#music-player-tab" ><i class="fa-solid fa-play"><span>Play now</p></span> </i> </a>
+                                    <a href="#"><i class="fa-solid fa-plus"> <span>Add to Queue</span>  </i></a>
+                                    <a href="#"><i class="fa-solid fa-list"> <span>Add to favourite </span></i> </a>
+                                    <a href="#"><i class="fa-solid fa-circle-info"><span>Get info!</span></i></a>
+                                </div>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-release-image">
+                    <a class="play-song-button" href="#music-player-tab"><i class="fa-solid fa-play"></i> </a>
+                    <img src="./Images/stealmygirl.jpeg">       
+                    <span class="latest-song-name">Steal My Girl  </span>
+                    <span class="latest-song-date">Aug 12 2000</span>
+                     <div class="latest-release-ellipsis">
+                        <span class="ellispsis"><i class="fa-solid fa-ellipsis">
+                                <div class="dropdown-content">
+                                    <a href="#music-player-tab"><i class="fa-solid fa-play"><span>Play now</p></span> </i> </a>
+                                    <a href="#"><i class="fa-solid fa-plus"> <span>Add to Queue</span>  </i></a>
+                                    <a href="#"><i class="fa-solid fa-list"> <span>Add to favourite </span></i> </a>
+                                    <a href="#"><i class="fa-solid fa-circle-info"><span>Get info!</span></i></a>
+                                </div>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+                <div class="latest-release-image">
+                    <a  class="play-song-button" href="#music-player-tab"><i class="fa-solid fa-play"></i> </a>
+                    <img src="./Images/Ranjana.jpeg">
+                    <span class="latest-song-name">Raanjhanaa  </span>
+                    <span class="latest-song-date">Sep 12 2014 </span>
+                     <div class="latest-release-ellipsis">
+                        <span class="ellispsis"><i class="fa-solid fa-ellipsis">
+                                <div class="dropdown-content">
+                                    <a href="#music-player-tab"><i class="fa-solid fa-play"><span>Play now</p></span> </i> </a>
+                                    <a href="#"><i class="fa-solid fa-plus"> <span>Add to Queue</span>  </i></a>
+                                    <a href="#"><i class="fa-solid fa-list"> <span>Add to favourite </span></i> </a>
+                                    <a href="#"><i class="fa-solid fa-circle-info"><span>Get info!</span></i></a>
+                                </div>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Artist Section      -->
+            <div class="popular-artist">
+                <h4>Popular Artist</h4>
+                <div class="artist-image">
+                
+                    <div class="artist">
+                        <a href="./edSheeranPlaylist.html">
+                            <img src="./Images/edsheeran.jpg">
+                        </a>
+                        <span class="artist-name">Ed Sheeran </span>
+                    </div>
+                    <div class="artist">
+                        <a href="./BillieElishPlaylist.html">
+                            <img src="./Images/BillieEilish.jpg">
+                        </a>
+                        <span class="artist-name">Billie Eilish </span>
+                    </div>
+                    <div class="artist">
+                        <img src="./Images/anirudh.jpg">
+                        <span class="artist-name">Anirudh </span>
+                    </div >
+                    <div class="artist">
+                        <img src="./Images/ArRahman.jpeg">
+                        <span class="artist-name">A.R Rahman </span>
+                    </div>
+                    <div class="artist">
+                        <img src="./Images/spb.jpeg">
+                        <span class="artist-name">Balasubrahmanyam </span>
+                    </div>
+                    <div class="artist">
+                        <img src="./Images/ArjithSingh.jpeg">
+                        <span class="artist-name">Arjith Singh </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Different Music type section -->
+            <div class="music-type">
+                
+                <div class="music-type-image">
+                    <ul>
+                        <li><img src="./Images/musicStations.png"></li>
+                        <li><img src="./Images/jazz.png"></li>
+                        <li><img src="./Images/hiphop.jpeg"></li>
+                        <li><img src="./Images/rockmusic.jpeg"></li>
+                        <li><img src="./Images/melody.jpeg"></li>
+                        <li><img src="./Images/rap.jpeg"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Different Music Vibe Section -->
+            <div class="music-vibe">
+                <div>
+                    <div class="vibe-name">Party </div>
+                    <img src="./Images/party.jpeg">      
+                </div>
+                <div>
+                    <div class="vibe-name">Electronics </div>
+                    <img src="./Images/electronicsmusic.jpeg">
+                </div>
+                <div>
+                    <div class="vibe-name">Road trip  </div>
+                    <img src="./Images/roadtrip.jpeg">
+                </div>
+            </div>
+            
+            <!-- Latset English Song Section -->
+            <div class="latest-english">
+                <h4>Latest English </h4>
+                <div class="latest-english-images">
+                    <div>
+                        <img src="./Images/musicStations.png">
+                        <h5>Hope </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/jazz.png">
+                        <h5>Night Changes </h5>
+                        <p>Sep 15, 2012</p>
+                    </div>
+                    <div>
+                        <img src="./Images/hiphop.jpeg">
+                        <h5>Lovely </h5>
+                        <p>Jan 26, 2021</p>
+                    </div>
+                    <div>
+                        <img src="./Images/rockmusic.jpeg">
+                        <h5>Walk Away </h5>
+                        <p>March 18, 2015</p>
+                    </div>
+                    <div>
+                        <img src="./Images/melody.jpeg">
+                        <h5>Perfect </h5>
+                        <p>Sep 12, 2017</p>
+                    </div>
+                    <div>
+                        <img src="./Images/rap.jpeg">
+                        <h5>Birthday </h5>
+                        <p>April 06, 2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Malayalam Song Section -->
+            <div class="latest-malayalam">
+                <h4>Latest Malayalam</h4>
+                <div class="latest-malayalam-images">
+                    <div>
+                        <img src="./Images/musicStations.png">
+                        <h5>Shyamambaram </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/jazz.png">
+                        <h5>Tupathu </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/hiphop.jpeg">
+                        <h5>Separation </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/rockmusic.jpeg">
+                        <h5>Anuragam </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/melody.jpeg">
+                        <h5>Bad Guy </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                    <div>
+                        <img src="./Images/rap.jpeg">
+                        <h5>Malabari Gang </h5>
+                        <p>Aug 12, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aside Section (Queue) -->
+        <aside class="music-queue">
+            <div class="queue-header">
+              <h1>Queue</h1>
+              <div class="queue-dropdown">
+                <span>Queue</span>
+                <div class="dropdown-content">
+                  <a href="#"><span>Playlists</span></a>
+                  <a href="#"><span>Favourite Songs</span></a>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- List of songs in Queue -->
+            <div class="queue-list">
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">01</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/ChalayaSong.jpeg">
+                    <h4 class="queue-list-song">Chalaya</h4>
+                    <span class="queue-list-singer">Arjith Singh</span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">03</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/Aradhyasong.jpeg">
+                    <h4 class="queue-list-song">Aradhya</h4>
+                    <span class="queue-list-singer">Sid Sriram</span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">04</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/edsheeran.jpg">
+                    <h4 class="queue-list-song">Perfect</h4>
+                    <span class="queue-list-singer">Edsheeren </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">05</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/lovely.jpeg">
+                    <h4 class="queue-list-song">Lovely </h4>
+                    <span class="queue-list-singer">Billie Ellish </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">01</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/badguy.jpeg">
+                    <h4 class="queue-list-song">Bad Guy</h4>
+                    <span class="queue-list-singer">Billie Ellish </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">01</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/malabarigang.jpeg">
+                    <h4 class="queue-list-song">Malabari Gang</h4>
+                    <span class="queue-list-singer">Unknown </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">02</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/fallingdown.jpeg">
+                    <h4 class="queue-list-song">Falling Down</h4>
+                    <span class="queue-list-singer">lil peep </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">04</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/thattathinMarayathu.jpeg">
+                    <h4 class="queue-list-song">Anuragam</h4>
+                    <span class="queue-list-singer">Vineeth </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">03</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/Parayuvan.jpeg">
+                    <h4 class="queue-list-song">Parayuvan</h4>
+                    <span class="queue-list-singer">Sid Sriram </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">05</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/octobersky.jpeg">
+                    <h4 class="queue-list-song">October Sky</h4>
+                    <span class="queue-list-singer">Yebba </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">05</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/nightchanges.jpeg">
+                    <h4 class="queue-list-song">Night Changes</h4>
+                    <span class="queue-list-singer">One Direction </span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="song-in-queue">
+                    <span class="queue-song-rank">03</span>
+                    <a  class="play-queue-song-button" href="#"><i class="fa-solid fa-play"><span></p></span></i> </a>
+                    <img src="./Images/Ranjana.jpeg">
+                    <h4 class="queue-list-song">Raanjhanaa</h4>
+                    <span class="queue-list-singer">A.R. Rahman</span>
+                    <span class="queue-list-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>  
+            </div>
+          </aside>
+
+          <!-- Music Player Tab -->
+          <footer>
+            <div id="music-player-tab" class="audio-player-bar">
+                <div class="song-details">
+                    <img src="./Images/Aradhyasong.jpeg">
+                    <div class="song-name">
+                    <h4 class="audio-player-bar-song">Aradhya</h4>
+                    <span class="audio-player-bar-singer">Sid Sriram</span>
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                </div>
+                <div  class="audio-player-bar-controls">
+                    <div>
+                    <a href="#" id="player-bar-pause"><i class="fa-solid fa-pause control-button"></i></a>
+                    <a href="#" id="player-bar-play"><i class="fa-solid fa-step-backward control-button"></i></a>
+                    <i class="fa-solid fa-play control-button"></i>
+                    <i class="fa-solid fa-step-forward control-button"></i>
+                    </div>
+                    <input type="range" class="music-seeker">
+                </div>
+                <div class="player-bar-volume">
+                    <div><i class="fa-brands fa-bluetooth"></i></div> 
+                    <div><i class="fa-solid fa-volume-up control-button"></i></div> 
+                    <div><input type="range" class="audio-seeker" min="0" max="100" step="1" value="0"></div> 
+                    <div> <i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                 <a id="player-tab-close" href="#" class="close-btn"></a>
+            </div>
+          </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,324 @@
+h1{
+    margin: 0px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+    background-image: linear-gradient(to top,#67808a, rgb(20, 20, 59));
+    margin: 0px;
+    font-family: monospace;
+}
+.playlist-body{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    margin: 10px 10px 10px 100px;
+    width: 64%;
+}
+.playlist-artist-details{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    /* border: 1px solid orange; */
+    margin: 5px;
+    opacity: 0.9;
+}
+.playlist-artist-details img{
+    height:400px;
+    width: 100%;
+    opacity: 0.7;
+}
+.playlist-artist-info{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid palevioletred; */
+    margin: 2px;
+    width: 100%;
+    padding: 30px;
+    color: antiquewhite;
+}
+.playlist-artist-info p{
+    font-size: large;
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+.playlist-btns{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+.playlist-artist-info .play-btn{
+    height: 3rem;
+    width: 7rem;
+    background-image: linear-gradient(to right, purple, plum);
+    color: aliceblue;
+    font-size: larger;
+    text-align: center;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.follow-btn{
+    height: 40px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+}
+.playlist-artist-songs{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid violet; */
+    height: 60%;
+    margin: 5px;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    width:36% ;
+    margin:10px 10px;
+}
+
+.recently-played-list{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid salmon; */
+    height: 60%;
+    margin: 5px;
+}
+
+/* Playlist- artist- songs */
+
+.playlist-artist-songs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid rgb(148, 11, 148); */
+    height:500px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-image: linear-gradient(to top,#5b90a5, rgb(2, 2, 22));
+    width:95%;
+    margin-top: 30px;
+}
+.playlist-artist-songs::-webkit-scrollbar{
+    display: none;
+}  
+.song-in-playlist{
+    display: flex;
+    position: relative;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    color: antiquewhite;
+    font-size: larger;
+    transition: 0.3s ease-in-out;
+    
+}
+.song-in-playlist:hover{
+    transform: scale(1.02);
+}
+.song-in-playlist img{ 
+    height:80px;
+    width: 80px;
+    margin-left: 20px;
+    
+    
+}
+.playlist-song-rank{
+    position: absolute;
+    font-size: large;
+    
+}
+.play-song-button{
+    position: absolute;
+    left: 5%;
+    top:40%;
+    z-index: 1;
+    font-size: larger;
+    color: aliceblue;
+    cursor: pointer;
+    opacity: 0; 
+    transition: 0.5s ease-in;
+}
+.play-song-button:hover{
+    opacity: 1;   
+}
+.playlist-song-name{
+    position: absolute;
+    left:120px;
+    
+}
+.playlist-singer-name{
+    position: absolute;
+    left: 120px;
+    top:50px;
+    font-size: large;
+}
+.playlist-heart{
+    position: absolute;
+    left:90%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.playlist-heart:hover{
+    color: red;
+}
+.playlist-song-add{
+    position: absolute;
+    left: 95%;
+    cursor: pointer;
+}
+
+/* Aside */
+/* similar-artists*/
+.similar-artists-list{
+    color: antiquewhite;
+
+}
+.similar-artist-songs{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 5px;
+    
+}
+.similar-artist-songs::-webkit-scrollbar{
+    display: none;
+}  
+.similar-artists-header{
+    display: flex;
+    /* border: 1px solid sandybrown; */
+    height: 15%;
+    color: antiquewhite;
+    justify-content: space-between;
+}
+.similar-artists-header h2{ 
+    font-size: 1.5rem;
+}
+.similar-artists-header div{
+    font-size: x-large;
+    margin-top: 20px;
+}
+.similar-artist-image{
+    position: relative;
+    /* border: 1px solid white; */
+    width:95%;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+.similar-artist-image:hover{
+    transform: scale(1.03);
+}
+.similar-artist-image img{
+    height: 80px;
+    width: 80px;
+    border-radius: 0.2rem;
+}
+.similar-artist-song-name{
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    font-size: large;
+}
+.similar-artist-song-date{
+    position: absolute;  
+    top: 40%;
+    left: 18%;
+}
+.similar-artist-ellipsis .ellispsis{
+    position: absolute;
+    left: 95%;
+    top: 2%;
+
+}
+.similar-artist-image .play-song-button{ 
+    
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.similar-artist-image .play-song-button i{
+    font-size: larger;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:10%;
+    background-color: #faf8f8;
+    min-width: 180px; /* Adjust dropdown width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a{
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content span{
+    margin: 10px;
+    font-size: 0.8rem;
+  }
+.dropdown-content a:hover {
+    background-color: #333232;
+  }
+.similar-artist-ellipsis:hover .dropdown-content{
+    display: block;
+    background-color: #31595a;
+  }
+
+  /* Recently Played List */
+
+/* .recently-played-list{ */
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 2px solid yellow; */
+    /* height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 5px;
+    color: antiquewhite; */
+/* } */
+.recently-played-songs{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 5px;
+    color: antiquewhite;
+}
+.recently-played-header h2{
+    font-size: 1.5rem;
+}
+.recently-played-header{
+    display: flex;
+    /* border: 1px solid sandybrown; */
+    height: 15%;
+    color: antiquewhite;
+    justify-content: space-between;
+}
+.recently-played-header div{
+    font-size: x-large;
+    margin-top: 20px;
+}
+.recently-played-songs::-webkit-scrollbar{
+    display: none;
+}  
